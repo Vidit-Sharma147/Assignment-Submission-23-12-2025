@@ -8,6 +8,7 @@ Follow these steps to verify the OTP login flow locally.
 
 ## Prerequisites
 - Node.js 18+ and npm installed
+- VS Code Installed (other IDE's could also be used)
 - Two terminals (one for backend, one for frontend)
 
 ## Run in VS Code (recommended)
