@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { requestOtp, validateIdentifier } from '../services.js';
 
+
 export default function LoginPage() {
   const [identifier, setIdentifier] = useState(localStorage.getItem('auth:identifier') || '');
   const [error, setError] = useState('');
@@ -57,6 +58,9 @@ export default function LoginPage() {
         />
         <button disabled={loading}>{loading ? 'Sending...' : 'Send OTP'}</button>
       </form>
+      <div className="small" style={{ marginTop: 12 }}>
+        Note: OTP codes are printed in the backend terminal (mock delivery).
+      </div>
       {info && <div className="notice">{info}</div>}
       {error && <div className="notice error">{error}</div>}
     </div>

@@ -4,6 +4,10 @@ import LoginPage from './pages/LoginPage.jsx';
 import VerifyPage from './pages/VerifyPage.jsx';
 import WelcomePage from './pages/WelcomePage.jsx';
 
+
+
+
+
 export default function App() {
   const navigate = useNavigate();
   useEffect(() => {
