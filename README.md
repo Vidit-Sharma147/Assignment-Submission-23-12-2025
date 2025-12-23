@@ -31,10 +31,10 @@ A minimal OTP-based authentication app with a Node/Express backend and a React (
 ## Assumptions
 
 - OTP expiry: 2 minutes (`OTP_EXP_MINUTES`).
-- Token: JWT signed with `HS256`, 24h expiry, contains `sub = identifier`.
-- Rate limiting: Basic resend cooldown (30s) on `/auth/request-otp`. No global rate limiter added.
-- Users: Auto-created on first login; no user DB.
-- Delivery: OTP is mock-logged in server console.
+- Token format: JWT (HS256) with 24h expiry; payload has `sub = identifier`.
+- Rate limiting: Per-identifier resend cooldown (30s) on `/auth/request-otp`; no global/IP rate limiter.
+- User existence: Auto-created on first login; no user DB.
+- Delivery: OTP is mock-logged in server console (no SMS/email service).
 
 ## Tech Stack Choices
 
