@@ -1,6 +1,11 @@
 # How to check the working of the project
 Follow these steps to verify the OTP login flow locally.
 
+## Start from a zip
+1. Download and extract the project zip.
+2. Open the extracted folder in VS Code.
+3. Use two terminals (integrated terminals recommended).
+
 ## Prerequisites
 - Node.js 18+ and npm installed
 - Two terminals (one for backend, one for frontend)
